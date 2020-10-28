@@ -1,45 +1,97 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# An Gáirdín
+An Gáirdín is a small organic garden and education center located in Portumna, Co Galway, Ireland.
 
-Welcome USER_NAME,
+The organisation runs a small organic market garden and orchard and also has a dedicated educational space for running courses and workshops. These range from spirituality to organic gardening to plastic pollution and climate change.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[View website in GitHub Pages]Link to live site here
+ 
+## UX
+The site design aims to provide a simple and inviting space, encouraging further interaction with the project either online or in person.
+Navigation should be simple and clearly outline the projects main areas.
 
-## Gitpod Reminders
+### Target audience
+The primary audience for the website is local to the area (within 100 km) and many users are middle-aged and older. For this reason, the design aims to keep the UI simple and uncluttered with a clear navigation directly from the landing page to each of the three content pages.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+There is a simple contact form that allows a user to leave a comment or to subscribe to a mailing list.
 
-`python3 -m http.server`
+Icons allow users to quickly access the organization's social media pages (facebook only at present).
 
-A blue button should appear to click: *Make Public*,
+### User Stories
+* As a visitor familiar with the project, I want to be able to easily get in touch with a comment or question.
+* As a new visitor unfamiliar with the project I want to see a visually appealing introduction to the aims and activites undertaken and be able to easily join a mailing list or otherwise get in touch.
+* As a local food enthusiast, I want to see information about the garden produce and see where this is sold locally.
+* As a like-minded educator, I want to see some background information on the project and then easily get in touch with collaboration ideas using a contact form.
+* As an older user or a user less-accustomed to online interation, I want to see an inviting and easy to navigate space that makes me feel at ease and is in line with my experience of the physical space.
 
-Another blue button should appear to click: *Open Browser*.
+* As a site-owner, I want to have an interenet presence that employs a look and feel in line with our aims, practices and goals. The site should mirror the atmosphere we endeavour to achieve in the physical location. 
+* As a site-owner, I want site visitors to easily be able to get in touch with a question or comment, or to ask to be added to the mailing list.
+* As a site-owner, I want any contact initiated on the website to go directly to my mail inbox. (nice to have, not a requirement for MS-1).
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Wireframe Mockups
+Wireframe mockups are designed mobile-first. 
+In initial designs, the landing/home page used a hamburger button in the top right as access to the site navigation. However, I have reconsidered this in light of the expected user/audience (in general an older demographic and perhaps less familiar with the conventions of internet navigation on mobile devices) and have instead chosen to implement individual and clearly visible buttons on the home page. In the future, as the site grows or pages are added, this approach may need to be expanded or superseded by a tidier option such as the hamburger button. 
+Wireframe designs can be seen here:
+[V1](assets/docs/wireframe_v0.1.pdf)
 
-A blue button should appear to click: *Make Public*,
+### Color Palette
+The color palette used in the site aims to mirror the changing colours of the seasons in a garden and to be at the same time warm, vibrant and inviting. Ideas in relation to colour have been gleaned from general reading. Two useful resources have been [elementor](https://elementor.com/blog/color-theory-web-design/?gclid=Cj0KCQjwreT8BRDTARIsAJLI0KKeRi1NNrRWesVXyhOmyfNpwLFH8CCWWnFQ6Ael53UB6eYECiUufkAaAmKeEALw_wcB) and [coolors] (https://coolors.co/f94144-f3722c-f8961e-f9c74f-90be6d-43aa8b-577590).
+As an initial guide, I will be using the palette described in the [draft color scheme](assets/color/Draft-color-scheme_An-Gairdin.pdf).
 
-Another blue button should appear to click: *Open Browser*.
+### Features
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**navigation bar** 
+**logo** 
+**footer** 
+**copyright information** 
+**social media icons**  
+**hero image** 
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##### Home
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The Home page features 
+Finally there is a simple **call to action button** 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+##### About
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The About page features 
+At the bottom of the page (above the footer) are two **call to action buttons**: 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Contact
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The Contact page features a **contact form**, 
+The bottom of the form contains a **Send Button** 
+ 
+### Existing Features
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Features to Implement in future
 
---------
 
-Happy coding!
+## Technologies Used
+
+
+## Testing 
+
+## Deployment
+
+
+### How to run this project locally
+
+## Credits
+
+### Content
+
+
+### Media
+
+
+### Code
+
+
+### Acknowledgements
+
+
+#### Disclaimer
+
+The content of this website is for educational purposes only.
