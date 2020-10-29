@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Reenie+Beanie&display=swap');
+
+/*-------------------------------------------------------------------Header*/
+
+.header-logo-main, .header-logo-sub,.header-nav {
+    background-color: #F3722c;
+    height: 75px;
+    font-family: "Reenie Beanie", sans-serif;
+    color: #fafafa;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 30px;
+    vertical-align: center;
+}
+.header-logo-sub{
+    padding-top: 22px;
+}
+/*-------------------------------------------------------------------Main Content Area*/
+.main-area{
+    background-color: #8cb477;
+    min-height: 150px;
+    margin: 0 auto;
+}
+.container-fluid{
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------Footer*/
+.footer-left, .footer-center, .footer-right{
+    background-color: #438397;
+    height: 80px;
+}
+
