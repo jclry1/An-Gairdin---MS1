@@ -12,24 +12,20 @@
     line-height: 20px;
     text-align: center;
     padding-top: 30px;
-    vertical-align: center;
 }
 .header-logo-sub{
     padding-top: 22px;
 }
 /*-------------------------------------------------------------------Main Content Area*/
-.main-area{
+.main-area-content{
     background-color: #8cb477;
-    min-height: 150px;
-    margin: 0 auto;
+    min-height: 400px;
 }
-.container-fluid{
-    margin: 0 auto;
-}
+
 
 /*-------------------------------------------------------------------Footer*/
 .footer-left, .footer-center, .footer-right{
     background-color: #438397;
-    height: 80px;
+    height: 50px;
 }
 
