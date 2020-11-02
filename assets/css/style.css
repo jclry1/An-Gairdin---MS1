@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/*-------------------------------------------------------------------whole page container*/
+
+body{
+    background-image: url("../images/bg-home.jpeg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
 
 /*-------------------------------------------------------------------Header*/
 
-.header-logo-main, .header-logo-sub,.header-nav {
-    background-color: #F3722c;
-    height: 75px;
-    font-family: "Reenie Beanie", sans-serif;
-    color: #fafafa;
-    font-weight: 600;
-    font-size: 2em;
-    line-height: 20px;
-    text-align: center;
-    padding-top: 30px;
+.header-left-nav, .header-right-logo{
+    background-color:rgba(255,0,0,0.3);
+    margin:0;
+    padding:0;
 }
-.header-logo-sub{
-    padding-top: 22px;
-}
+
 /*-------------------------------------------------------------------Main Content Area*/
-.main-area-content{
-    background-color: #8cb477;
-    min-height: 400px;
-}
 
 
 /*-------------------------------------------------------------------Footer*/
@@ -28,4 +26,6 @@
     background-color: #438397;
     height: 50px;
 }
+/*-------------------------------------------------------------------Media queries*/
 
+  
