@@ -13,3 +13,13 @@ Initial design was to have the hamburger button on the right, but after consider
 
 Image compression for faster loading, less data usage:
 https://tinyjpg.com/
+
+Fixed bottom:
+https://getbootstrap.com/docs/4.1/utilities/position/
+
+Really troublesome issue with container-fluid introducing nwanted margin on right side at sm screen sizes. Finally resolved with:
+.container-fluid{
+    overflow-x: hidden;
+}
+Source:
+https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding
