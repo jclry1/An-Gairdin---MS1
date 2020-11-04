@@ -4,15 +4,11 @@
 
 /*-------------------------------------------------------------------whole page container*/
 
-/* body{
-    background-image: url("../images/bg-home.jpeg");
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: top;
+html, body{
+    height: 100vh;
+    
 }
-*/
+
 /*-------------------------------------------------------------------Header*/
 
 .container-fluid{
@@ -60,22 +56,26 @@
 }
 /*-------------------------------------------------------------------Main Content Area*/
 .test{
-background-color: red;
-margin: 0;
-min-height: 100px;
-margin-top: 0;
-}
-.test{
     width: 100%;
-    min-height: 900px;
-    background-color: red;
-    background-image: url("../images/bg-home.jpeg")
+    height: 100-vh;
+    background-image: url("../images/bg-home.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0;
+    min-height: 600px;
 }
 
 /*-------------------------------------------------------------------Footer*/
 .footer-left, .footer-center, .footer-right{
     background-color: #438397;
     height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0;
+}
+.footer-left{
+    font-weight: 200;
 }
 /*-------------------------------------------------------------------Media queries*/
 

@@ -23,3 +23,6 @@ Really troublesome issue with container-fluid introducing nwanted margin on righ
 }
 Source:
 https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding
+
+Issue with getting the main content area to stretch vertically to fill the available space. Fixed with adding vh-100 to all parents:
+https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bottom-of-the-div/30480004#30480004
