@@ -66,17 +66,41 @@ html, body{
 }
 
 /*-------------------------------------------------------------------Footer*/
-.footer-left, .footer-center, .footer-right{
+.footer-left, .footer-center, .footer-right {
     background-color: #438397;
-    height: 50px;
-    line-height: 50px;
+    color: #fafafa;
+    height:60px;
     text-align: center;
     font-family: "Open Sans", sans-serif;
+    font-size: .7em;
     margin-top: 0;
+    padding: 10px;
+    padding-left: 10px;
 }
-.footer-left{
-    font-weight: 200;
+   
+.footer-right i{
+    padding-left: 15px; 
+    padding-top: 15px;
+    padding-right:15px;
+    font-size: 1.2em;
 }
-/*-------------------------------------------------------------------Media queries*/
+.footer-left, p{
+    padding-left: 20px;
+}
+.footer-center, p{
+    padding-right: 20px;
+}
 
-  
+/*-------------------------------------------------------------------Media queries*/
+@media only screen and (min-width: 768px) {
+    .footer-left, .footer-center, .footer-right{
+      font-size: 16px;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 70px;
+    }
+    .footer-right{
+        padding-top: 0;
+        font-size: 1.25em;
+    }
+}
