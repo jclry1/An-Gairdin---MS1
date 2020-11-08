@@ -29,3 +29,9 @@ https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bot
 
 Responsive breakpoint for footer - sizing icons, col-layout:
 https://getbootstrap.com/docs/4.1/layout/overview/
+
+Accessibility: When to add "aria-hidden=true" for icons
+https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility
+
+Fixed header overlaying content issue - fixed by adding padding to the body:
+https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
