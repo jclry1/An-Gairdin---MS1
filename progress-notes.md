@@ -35,3 +35,7 @@ https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility
 
 Fixed header overlaying content issue - fixed by adding padding to the body:
 https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
+
+Information and layout practice for using bootstrap card-decks:
+https://getbootstrap.com/docs/4.0/components/card/
+https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
