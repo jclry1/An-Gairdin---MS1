@@ -92,6 +92,10 @@ width: 100%;
 .card{
     border-color: rgba(67,131,151, 0.9); 
     background-color: #fafafa;
+    display:flex;
+}
+.card-content{
+    flex: stretch;
 }
 
 .card-container{
@@ -103,6 +107,12 @@ width: 100%;
 .card-container h2, h5{
     padding: 0px 20px 0px 20px;
 }
+.card-footer{
+    background-color: #fafafa;
+    margin-bottom: 5px;
+}
+
+
 
 /*-------------------------------------------------------------------Form Area*/
 

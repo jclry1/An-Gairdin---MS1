@@ -39,3 +39,6 @@ https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of
 Information and layout practice for using bootstrap card-decks:
 https://getbootstrap.com/docs/4.0/components/card/
 https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
+
+About Page:
+about.html based on garden.html (cp garden.html about.html)
