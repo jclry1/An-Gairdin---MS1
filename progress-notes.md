@@ -42,3 +42,24 @@ https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
 
 About Page:
 about.html based on garden.html (cp garden.html about.html)
+
+
+### Bootstrap card deck issues
+
+Problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this:
+In the card-body div (Bootstrap) add a new div below the title to contain the paragraph content. Call this .card-content. Set the parent card-body to be:
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+On the new child div, apply: 
+.card-content{
+  align-self: stretch;
+  height: 100%;
+}
+
+It seems to need both the stretch and 100% to work. 
+
+That pushes the footer to the end of th card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. resolve this with a fixed-height footer to allow space for 3 lines of small text.
+
