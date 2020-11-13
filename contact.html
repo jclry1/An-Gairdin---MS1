@@ -23,7 +23,7 @@
   <body>
     <!--Header logo and nav-->
     <div class="container-fluid vh-100 px-0">
-<div class="row fixed-top">
+      <div class="row fixed-top">
         <div class="col-6 header-left-nav">
           <nav class="navbar navbar-expand-md navbar-light navbar-static-top">
             <button
@@ -59,13 +59,13 @@
       </div>
 
       <div class="row 100-vh">
-        <div class="col main-content-area"> 
-              <div class="row">
+        <div class="col main-content-area">
+          <div class="row">
             <div class="col form-wrapper">
               <form class="contact-form" method="POST" action="#">
                 <h2>We'd love to hear from you!</h2>
 
-                <label for="fname">First Name</label><br>
+                <label for="fname">First Name</label><br />
                 <input
                   class="text-input"
                   type="text"
@@ -73,8 +73,8 @@
                   name="first_name"
                   required
                 />
-                
-                <label for="lname">Last Name</label><br>
+
+                <label for="lname">Last Name</label><br />
                 <input
                   class="text-input"
                   type="text"
@@ -82,8 +82,8 @@
                   name="last_name"
                   required
                 />
-               
-                <label for="email_1">Email Address</label><br>
+
+                <label for="email_1">Email Address</label><br />
                 <input
                   class="text-input"
                   type="email"
@@ -91,17 +91,18 @@
                   name="email_address"
                   required
                 />
-                
-                <label for="email_2">Email Address</label><br>
+                <br />
+                <label for="subscribe">Check the box if you'd like to be added to our mailing list </label>
                 <input
-                  class="text-input"
-                  type="email"
-                  id="email_2"
-                  name="message"
-                  required
+                  type="checkbox"
+                  id="subscribe"
+                  name="subscribe"
+                  value="subscribe"
                 />
-                
-                <label for="message-text">Message</label><br>
+                <br />
+                <br>
+
+                <label for="message-text">Message</label><br />
                 <textarea
                   class="message-text"
                   type="text"
@@ -109,25 +110,24 @@
                   name="message"
                   maxlength="400"
                   placeholder="Max 400 characters"
-                  required></textarea>
-               
+                  required
+                ></textarea>
 
-                <input class="send-button" type="submit" value="Send" />
-
+                <input class="send-button" type="submit" value="Send my message" />
               </form>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
 
     <footer>
       <div class="row fixed-bottom">
-        <div class="col-6 col-md-3 footer-left ">
+        <div class="col-6 col-md-3 footer-left">
           All content copyright: <br />
           An Gairdin.
         </div>
-        <div class="col col-md-6 footer-center ">
+        <div class="col col-md-6 footer-center">
           "Gardening is an active participation in the deepest mysteries of the
           universe."
           <br />

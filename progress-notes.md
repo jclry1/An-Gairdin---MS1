@@ -65,6 +65,20 @@ That pushes the footer to the end of th card. However, if the footers have diffe
 
 Info for this solution derived from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 
-### Placeholder text color
+### Placeholder text color - form textarea
 Issue resolved using code and info from here: https://medium.com/@samanthaming/styling-placeholder-text-with-css-9a2a608b68bc
+
+
+
+
+
+
+
+## Wishlist
+
+### Underline active nav 
+
+### Different widths for contact form based on screen sizes
+90% is good for mobile butseems a bit too wide for desktop
+
 

@@ -63,6 +63,9 @@ body {
   margin: 0;
   padding: 0;
 }
+ .nav-item a.active{
+     border-bottom: 3px solid red;
+ }
 /*-------------------------------------------------------------------Main Content Area*/
 .main-content-area {
   width: 100%;
@@ -86,6 +89,9 @@ width: 100%;
   margin-bottom: 70px;
   
 }
+
+/*Content on about.html and garden.html based on Bootstrap card-deck with additional custom CSS styling - primarily to keep the footers at the bottom of the cards*/
+
 .card-deck{
     margin: 0px 10px 0px 10px;
 }
@@ -125,6 +131,7 @@ width: 100%;
 
 
 /*-------------------------------------------------------------------Form Area*/
+/*Contact form based on the Love Running walkthrough project*/
 
 .form-wrapper {
   width: 80%;
@@ -135,15 +142,25 @@ width: 100%;
 }
 .contact-form {
   padding: 20px;
-  width: 60%;
-  padding-bottom: 35px;
+  width: 90%;
+  padding: 10px 40px 35px;
   margin-top: 15px;
   margin-bottom:40px;
   color: #fff;
-  background-color: rgba(60, 60, 60, 0.6);
+  background-color:rgba(67,131,151, 0.9);
   border: 1px solid #f9c74f;
   border-radius: 5px;
 }
+/*
+.contact-form {
+  margin-top: 15px;
+  color: #fff;
+  background-color:rgba(67,131,151, 0.9);
+  width: 80%;
+  padding: 10px 40px 30px;
+}*/
+
+
 .contact-form h2 {
   color: #fafafa;
   padding: 10px;
@@ -214,20 +231,18 @@ textarea .placeholder{
   border-radius: 4px;
   text-align: center;
   font-size: 100%;
-  background-color:#f9c74f;
-  color: #fafafa;
+  background-color:#FCE2A6;
+  color: #161D24;
   display: block;
+  border: none;
 }
-.join-button:hover {
-  background-color: #fafafa;
-  color: #f9c74f;
+.send-button:hover {
+  background-color: #F3722C;
+  color:#fafafa;
 }
-.contact-form {
-  margin-top: 15px;
-  color: #fff;
-  background-color:rgba(67,131,151, 0.9);
-  max-width: 80%;
-}
+
+
+
 /*-------------------------------------------------------------------Footer*/
 footer{
     margin-top: 10px;
