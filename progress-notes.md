@@ -78,6 +78,8 @@ Issue resolved using code and info from here: https://medium.com/@samanthaming/s
 
 ### Underline active nav 
 
+### Style social media icons to have header color on hover
+
 ### Different widths for contact form based on screen sizes
 90% is good for mobile butseems a bit too wide for desktop
 
