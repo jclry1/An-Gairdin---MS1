@@ -27,7 +27,7 @@ body {
 .header-right-logo {
   background-color: #f9c74f;
   margin: 0;
-  color: #193F34;
+  color: #193f34;
 }
 .header-right-logo {
   text-align: center;
@@ -59,34 +59,26 @@ body {
   font-weight: 600;
   font-family: "Spectral SC", sans-serif;
 }
-/*.navbar-light .nav-link {
-  margin: 0;
-  padding: 0;
-  color:#161D24;
-}*/
+
 /*Styling navbar elements requires high specificity to override default bootstrap: https://stackoverflow.com/questions/43381596/bootstrap-4-navbar-color */
 
 .navbar-light .nav-item .nav-link {
-    color: #193F34;
+  color: #193f34;
 }
- 
- .nav-link i{
-     padding-right: 10px;
- }
- 
- .navbar-light .nav-item.active .nav-link,
+
+.nav-link i {
+  padding-right: 10px;
+}
+
+.navbar-light .nav-item.active .nav-link,
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link {
-        color: #4D0204;
+  color: #4d0204;
 }
-.navbar-toggler{
-    margin-top: 15px;
-    color: #193F34;
-    border-color: #193F34;
-}
+
 .navbar-light .navbar-toggler {
-    color:#193F34;
-    border-color: #193F34;
+  margin-top: 15px;
+  border-color: #193f34;
 }
 
 /*-------------------------------------------------------------------Main Content Area*/
@@ -96,78 +88,77 @@ body {
   background-image: url("../images/bg-home.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   min-height: 500px;
   padding-bottom: 65px;
-  padding-top:65px;
-  flex:1;
+  padding-top: 65px;
+  flex: 1;
   margin-bottom: 20px;
 }
-.main-content-area-garden{
-width: 100%;
- background-color: #FEF8E9;
+.main-content-area-garden {
+  width: 100%;
+  background-color: #fef8e9;
   height: 100%;
   min-height: 500px;
   padding-bottom: 65px;
-  flex:1;
+  flex: 1;
   margin-bottom: 70px;
-  
 }
 
 /*Content on about.html and garden.html based on Bootstrap card-deck with additional custom CSS styling - primarily to keep the footers at the bottom of the cards*/
 
-.card-deck{
-    margin: 0px 10px 0px 10px;
+.card-deck {
+  margin: 0px 10px 0px 10px;
 }
-.card-container{
-    margin: 35px 15px 5px;
+.card-container {
+  margin: 35px 15px 5px;
 }
 .card-container p {
-    font-family: "Open-Sans", sans-serif;
-    padding: 0px 20px 0px 20px;
+  font-family: "Open-Sans", sans-serif;
+  padding: 0px 20px 0px 20px;
 }
-.card-container h2, h5{
-    font-family: "Open-Sans", sans-serif;
-    text-transform: uppercase;
-    padding: 0px 20px 0px 20px;
-    color: #215445;
-    letter-spacing: 2px;
+.card-container h2,
+h5 {
+  font-family: "Open-Sans", sans-serif;
+  text-transform: uppercase;
+  padding: 0px 20px 0px 20px;
+  color: #215445;
+  letter-spacing: 2px;
 }
-.card{
-    border-color: rgba(67,131,151, 0.9); 
-    background-color: #fafafa;
-    display:flex;
+.card {
+  border-color: rgba(67, 131, 151, 0.9);
+  background-color: #fafafa;
+  display: flex;
 }
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.card-body .card-text{
-    font-family: "Open Sans", sans-serif;
+.card-body .card-text {
+  font-family: "Open Sans", sans-serif;
 }
-.card-content{
+.card-content {
   align-self: stretch;
   height: 100%;
 }
 
-.card-footer{
-    background-color: #fafafa;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    min-height: 80px;
-    padding-bottom: 5px;
+.card-footer {
+  background-color: #fafafa;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  min-height: 90px;
+  padding-bottom: 5px;
 }
-.card-footer .card-text{
-    font-style: italic;
-    color: #215445;
+.card-footer .card-text {
+  font-style: italic;
+  color: #215445;
 }
-.card-footer small{
-    color: #215445;
+.text-muted {
+  color: #215445;
 }
-
-
-
-
 
 /*-------------------------------------------------------------------Form Area*/
 /*Contact form based on the Love Running walkthrough project*/
@@ -184,9 +175,9 @@ width: 100%;
   width: 90%;
   padding: 10px 40px 35px;
   margin-top: 15px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   color: #fff;
-  background-color:rgba(67,131,151, 0.9);
+  background-color: rgba(67, 131, 151, 0.9);
   border: 1px solid #f9c74f;
   border-radius: 5px;
 }
@@ -213,68 +204,98 @@ width: 100%;
   text-align: left;
   color: #fafafa;
 }
-textarea{
-    color: #fafafa;
+textarea {
+  color: #fafafa;
 }
-textarea .placeholder{
-    color: #fafafa;
+textarea .placeholder {
+  color: #fafafa;
 }
-/* Placeholder text color in the form */ 
+/* Placeholder text color in the form */
 /* WebKit, Edge */
 ::-webkit-input-placeholder {
   color: #fafafa;
 }
 /* Firefox 4-18 */
-:-moz-placeholder { 
-  color:#fafafa;
+:-moz-placeholder {
+  color: #fafafa;
   opacity: 1;
 }
 /* Firefox 19+ */
-::-moz-placeholder { 
+::-moz-placeholder {
   color: #fafafa;
   opacity: 1;
 }
 /* IE 10-11 */
-:-ms-input-placeholder { 
+:-ms-input-placeholder {
   color: #fafafa;
 }
 /* Edge */
-::-ms-input-placeholder { 
+::-ms-input-placeholder {
   color: #fafafa;
 }
 /* MODERN BROWSER */
-::placeholder { 
+::placeholder {
   color: #fafafa;
 }
 /* End placeholder text styling */
 
-.message-text:hover{
-    border-color:#f9c74f;
+.message-text:hover {
+  border-color: #f9c74f;
 }
 
 .text-input:hover {
-  border-color:#f9c74f;
+  border-color: #f9c74f;
 }
 .send-button {
   margin-top: 20px;
   border-radius: 4px;
   text-align: center;
   font-size: 100%;
-  background-color:#FCE2A6;
-  color: #161D24;
+  background-color: #fce2a6;
+  color: #161d24;
   display: block;
   border: none;
 }
 .send-button:hover {
-  background-color: #F3722C;
-  color:#fafafa;
+  background-color: #f3722c;
+  color: #fafafa;
+}
+/*-------------------------------------------------------------------Welcome Mat*/
+.welcome {
+  display: flex;
+}
+.welcome-mat {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
+.welcome-content {
+  color: #f9c74f;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  /*background-image: url("../images/ladybird-200.jpeg");*/
+  border: 2px solid #f9c74f;
+  background-color:  rgba(67, 131, 151, 0.9);
+  font-size; 12px;
+  font-family: "Spectral SC", sans-serif;
+  font-weight:700;
+  margin-top:25px;
+}
+.welcome-text {
+    margin-top: 20px;
+}
 
+.welcome-content p{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
 
 /*-------------------------------------------------------------------Footer*/
-footer{
-    margin-top: 10px;
+footer {
+  margin-top: 10px;
 }
 
 .footer-left,
@@ -290,13 +311,21 @@ footer{
   padding-left: 10px;
   padding-top: 10px;
 }
+/*Social links section and transitions based on Bootstrap 4 'Resume' mini-project */
 
-.footer-right i {
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-right: 15px;
-  font-size: 1.2em;
+.social-links i {
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #fafafa;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
+.social-links i:hover{
+    color: #f9c74f;
+}
+
 .footer-left,
 p {
   padding-left: 20px;
@@ -320,4 +349,8 @@ p {
     padding-top: 0;
     font-size: 1.25em;
   }
+  .welcome-mat{
+      margin-top:75px;
 }
+}
+

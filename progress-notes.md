@@ -69,9 +69,8 @@ Info for this solution derived from: https://developer.mozilla.org/en-US/docs/We
 Issue resolved using code and info from here: https://medium.com/@samanthaming/styling-placeholder-text-with-css-9a2a608b68bc
 
 
-
-
-
+### Circle with text on index.html (welcome-mat)
+Alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 
 
 ## Wishlist
