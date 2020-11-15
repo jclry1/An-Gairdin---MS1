@@ -15,7 +15,6 @@ body {
 }
 
 /*-------------------------------------------------------------------Header*/
-
 .container-fluid {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -23,12 +22,12 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
+/*-------------------------------------------------------------------Header Navigation*/
 .header-left-nav,
 .header-right-logo {
   background-color: #f9c74f;
   margin: 0;
-  color: #193f34;
+  color: #193F34;
 }
 .header-right-logo {
   text-align: center;
@@ -40,6 +39,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   min-height: 65px;
+  line-height: 50px;
 }
 .navbar-toggler {
   margin-left: 25px;
@@ -52,20 +52,43 @@ body {
 }
 
 .nav-item {
-  margin-left: 25px;
+  margin-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
   letter-spacing: 1px;
   font-weight: 600;
   font-family: "Spectral SC", sans-serif;
 }
-.nav-link {
+/*.navbar-light .nav-link {
   margin: 0;
   padding: 0;
+  color:#161D24;
+}*/
+/*Styling navbar elements requires high specificity to override default bootstrap: https://stackoverflow.com/questions/43381596/bootstrap-4-navbar-color */
+
+.navbar-light .nav-item .nav-link {
+    color: #193F34;
 }
- .nav-item a.active{
-     border-bottom: 3px solid red;
+ 
+ .nav-link i{
+     padding-right: 10px;
  }
+ 
+ .navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+        color: #4D0204;
+}
+.navbar-toggler{
+    margin-top: 15px;
+    color: #193F34;
+    border-color: #193F34;
+}
+.navbar-light .navbar-toggler {
+    color:#193F34;
+    border-color: #193F34;
+}
+
 /*-------------------------------------------------------------------Main Content Area*/
 .main-content-area {
   width: 100%;
