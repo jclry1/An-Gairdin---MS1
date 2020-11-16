@@ -24,6 +24,9 @@ body {
   flex-direction: column;
 }
 /*-------------------------------------------------------------------Header Navigation*/
+.fixed-top{
+    margin-bottom: 10px;
+}
 .header-left-nav,
 .header-right-logo {
   background-color: #f9c74f;
@@ -31,14 +34,14 @@ body {
   color: #193f34;
 }
 .header-right-logo {
-  text-align: center;
+  
   padding-top: 20px;
   padding-bottom: 10px;
-  padding-right: 30px;
-  letter-spacing: 2px;
+  padding-right: 15px;
+  letter-spacing: 1px;
   font-family: "Spectral SC", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 16px;
   min-height: 65px;
   line-height: 50px;
 }
@@ -53,10 +56,9 @@ body {
 }
 
 .nav-item {
-  margin-left: 15px;
+  margin-left: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
-  letter-spacing: 1px;
   font-weight: 600;
   font-family: "Spectral SC", sans-serif;
 }
@@ -177,12 +179,23 @@ margin-bottom: 0px;
 /*-------------------------------------------------------------------Form Area*/
 /*Contact form based on the Love Running walkthrough project*/
 
+.contact-page-main{
+    width: 100%;
+  background-color: #fef8e9;
+  height: 100-vh;
+  min-height: 500px;
+  margin-bottom: 50px;
+
+}
 .form-wrapper {
   width: 80%;
   display: flex;
+  align-self: stretch;
   justify-content: center;
+margin-top: 90px;
   padding-bottom: 50px;
   margin-bottom: 10px;
+  height: 100%;
 }
 .contact-form {
   padding: 20px;
@@ -328,8 +341,8 @@ footer {
   font-size: 10px;
 }
 .footer-left p{
-    padding-left:15px;
-    padding-top: 10px;
+    padding: 10px 15px 15px;
+
 }
 .footer-right {
     padding-top:0px;
@@ -371,7 +384,11 @@ p {
     padding-right: 10px;
     padding-left: 10px;
     height: 70px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    margin-bottom:0;
+  }
+  .footer-left p{
+      padding: 15px 0px 25px;
   }
   .footer-right {
     padding-top: 0;
@@ -384,4 +401,38 @@ p {
     margin-bottom: 50px;
 }
 }
+@media only screen and (min-width: 425px) {
+ .header-right-logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  letter-spacing: 1px;
+  font-family: "Spectral SC", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  min-height: 65px;
+  line-height: 50px;
+}
+  }
 
+  /* Media query to allow social icons (footer) to display at reduced size on smaller screens:*/
+@media only screen and (max-width: 320px) {
+ .social-links i {
+    padding-left: 10px;
+    font-size: 12px;
+}
+}
+
+/*Media-query to prevent header being pushed down into content at small screen size (when line breaks between icon and text):*/
+@media only screen and (max-width: 768px) {
+ .nav-link i {
+  padding-right: 3px;
+}
+.nav-item {
+    font-size: 12px;
+  margin-left: 5px;
+}
+
+}
+}
