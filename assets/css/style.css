@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /*-------------------------------------------------------------------whole page container*/
 
@@ -34,16 +35,19 @@ body {
   color: #193f34;
 }
 .header-right-logo {
-  
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 10px;
   padding-right: 15px;
-  letter-spacing: 1px;
-  font-family: "Spectral SC", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 18px;
   min-height: 65px;
-  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 .navbar-toggler {
   margin-left: 25px;
@@ -51,7 +55,7 @@ body {
   margin-bottom: 5px;
 }
 .navbar-nav {
-  margin: 0;
+  margin: 0px 0px 0px 25px;
   padding: 0;
 }
 
@@ -59,8 +63,9 @@ body {
   margin-left: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
-  font-weight: 600;
-  font-family: "Spectral SC", sans-serif;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
 }
 
 /*Styling navbar elements requires high specificity to override default bootstrap: https://stackoverflow.com/questions/43381596/bootstrap-4-navbar-color */
@@ -151,16 +156,7 @@ display: flex;
 flex-direction: column;
 height: 100%;
 }
-.card-footer {
-  background-color: #fafafa;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  min-height: 130px;
-  padding-bottom: 5px;
-}
-.card-footer .card-text {
-  font-style: italic;
-}
+
 blockquote{
 padding: 15px 20px 0px 20px;
 font-family: "Open-Sans", sans-serif;
@@ -335,9 +331,7 @@ footer {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin-top: 0;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 20px 15px;
   font-size: 10px;
 }
 .footer-left p{
@@ -347,9 +341,17 @@ footer {
 .footer-right {
     padding-top:0px;
 }
-/*Social links section and transitions based on Bootstrap 4 'Resume' mini-project */
 
+/*Social links transitions based on Bootstrap 4 'Resume' mini-project
+Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container#Properties_that_control_alignment */
 
+.social-links{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 .social-links i {
     margin-bottom: 50px;
     padding-top: 20px;
@@ -378,7 +380,6 @@ p {
 /*-------------------------------------------------------------------Media queries*/
 @media only screen and (min-width: 768px) {
   .footer-left,
-  .footer-center,
   .footer-right {
     font-size: 12px;
     padding-right: 10px;
@@ -401,6 +402,7 @@ p {
     margin-bottom: 50px;
 }
 }
+/* Media query to control behaviour of header at different screen sizes*/
 @media only screen and (min-width: 425px) {
  .header-right-logo {
   text-align: center;
@@ -408,7 +410,7 @@ p {
   padding-bottom: 10px;
   padding-right: 30px;
   letter-spacing: 1px;
-  font-family: "Spectral SC", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-weight: 700;
   font-size: 18px;
   min-height: 65px;
