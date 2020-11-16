@@ -76,7 +76,8 @@ Alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexi
 https://stackoverflow.com/questions/2205159/correct-use-of-blockquote-q-and-cite#:~:text=Yes.,%2C%20standard%2C%20URL%2C%20etc.&text=The%20blockquote%20element%20(also%20the,where%20the%20quote%20came%20from.
 https://www.w3schools.com/tags/tag_blockquote.asp
 
-
+### Put copyright info into 'small' element for semantic markup
+https://stackoverflow.com/questions/5876021/correct-semantic-tag-for-copyright-info-html5
 
 ## Wishlist
 

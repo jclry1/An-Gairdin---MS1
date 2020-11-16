@@ -37,7 +37,7 @@ body {
 .header-right-logo {
   padding-top: 30px;
   padding-bottom: 10px;
-  padding-right: 15px;
+  padding-right: 20px;
   letter-spacing: 1.5px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
@@ -125,13 +125,13 @@ body {
 }
 .card-container p {
   font-family: "Open-Sans", sans-serif;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 0px 8px;
 }
 .card-container h2,
 h5 {
   font-family: "Open-Sans", sans-serif;
   text-transform: uppercase;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 0px 8px;
   color: #215445;
   letter-spacing: 1px;
   font-weight: 400;
@@ -323,23 +323,33 @@ footer {
 }
 
 .footer-left,
-.footer-center,
 .footer-right {
   background-color: #438397;
   color: #fafafa;
   height: 70px;
-  text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin-top: 0;
-  padding: 10px 20px 15px;
-  font-size: 10px;
 }
-.footer-left p{
-    padding: 10px 15px 15px;
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8px;
+}
+.footer-left .copyright{
+    font-family: "Open-Sans", sans-serif;
+    padding-left: 20px;
+    text-align: center;
+}
 
-}
+
 .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding-top:0px;
+}
+.footer-right .list-inline{
+    margin-bottom: 0;
 }
 
 /*Social links transitions based on Bootstrap 4 'Resume' mini-project
@@ -347,15 +357,12 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 
 .social-links{
     width: 80%;
-    display: flex;
     flex-direction: row;
+    display: flex;
     justify-content: space-around;
-
+    align-items: center;
 }
 .social-links i {
-    margin-bottom: 50px;
-    padding-top: 20px;
-    padding-left: 20px;
     color: #fafafa;
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -366,16 +373,7 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 .social-links i:hover{
     color: #f9c74f;
 }
-/*
-.footer-left p {
-  padding-left: 20px;
-  font-weight: 100;
-}
-.footer-center,
-p {
-  padding-right: 20px;
-  font-weight: 100;
-}
+
 */
 /*-------------------------------------------------------------------Media queries*/
 @media only screen and (min-width: 768px) {
@@ -402,19 +400,22 @@ p {
     margin-bottom: 50px;
 }
 }
-/* Media query to control behaviour of header at different screen sizes*/
+/* Media query to control behaviour of header/footer at different screen sizes*/
 @media only screen and (min-width: 425px) {
  .header-right-logo {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: 30px;
   letter-spacing: 1px;
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   min-height: 65px;
   line-height: 50px;
+}
+.footer-left .copyright{
+    font-size: 12px;
 }
   }
 
@@ -429,10 +430,10 @@ p {
 /*Media-query to prevent header being pushed down into content at small screen size (when line breaks between icon and text):*/
 @media only screen and (max-width: 768px) {
  .nav-link i {
-  padding-right: 3px;
+  padding-right: 5px;
 }
 .nav-item {
-    font-size: 12px;
+font-size: 14px;
   margin-left: 5px;
 }
 
