@@ -72,6 +72,11 @@ Issue resolved using code and info from here: https://medium.com/@samanthaming/s
 ### Circle with text on index.html (welcome-mat)
 Alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 
+### Change card footers to blockquotes for more semantic mark-up and fix display issues
+https://stackoverflow.com/questions/2205159/correct-use-of-blockquote-q-and-cite#:~:text=Yes.,%2C%20standard%2C%20URL%2C%20etc.&text=The%20blockquote%20element%20(also%20the,where%20the%20quote%20came%20from.
+https://www.w3schools.com/tags/tag_blockquote.asp
+
+
 
 ## Wishlist
 
