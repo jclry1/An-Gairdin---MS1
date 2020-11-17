@@ -302,7 +302,7 @@ textarea .placeholder {
   /*background-image: url("../images/ladybird-200.jpeg");*/
   border: 2px solid #f9c74f;
   background-color:  rgba(67, 131, 151, 0.9);
-  font-size; 12px;
+  font-size: 12px;
   font-family: "Spectral SC", sans-serif;
   font-weight:700;
   margin-top:25px;
@@ -374,8 +374,8 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
     color: #f9c74f;
 }
 
-*/
 /*-------------------------------------------------------------------Media queries*/
+
 @media only screen and (min-width: 768px) {
   .footer-left,
   .footer-right {
@@ -401,6 +401,7 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 }
 }
 /* Media query to control behaviour of header/footer at different screen sizes*/
+
 @media only screen and (min-width: 425px) {
  .header-right-logo {
   text-align: center;
@@ -427,15 +428,14 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 }
 }
 
-/*Media-query to prevent header being pushed down into content at small screen size (when line breaks between icon and text):*/
+/* Media-query to prevent header being pushed down into content at small screen size (when line breaks between icon and text): */
+
 @media only screen and (max-width: 768px) {
- .nav-link i {
+.nav-link i {
   padding-right: 5px;
 }
 .nav-item {
 font-size: 14px;
-  margin-left: 5px;
-}
-
+margin-left: 5px;
 }
 }
