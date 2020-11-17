@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;700&display=swap");
@@ -20,9 +27,14 @@ body {
 .container-fluid {
   overflow-x: hidden;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*-------------------------------------------------------------------Header Navigation*/
 .fixed-top{
@@ -35,19 +47,25 @@ body {
   color: #193f34;
 }
 .header-right-logo {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  padding-right: 20px;
+  padding: 30px 20px 0px 0px;
   letter-spacing: 1.5px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   line-height: 25px;
   font-size: 18px;
   min-height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .logo-link{
     color: #193f34
@@ -63,7 +81,7 @@ text-decoration: none;
 }
 .navbar-nav {
   margin: 0px 0px 0px 25px;
-  padding: 0;
+  padding: 0px;
 }
 
 .nav-item {
@@ -109,7 +127,9 @@ text-decoration: none;
   min-height: 500px;
   padding-bottom: 65px;
   padding-top: 65px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-bottom: 20px;
 }
 .main-content-area-garden {
@@ -118,7 +138,9 @@ text-decoration: none;
   height: 100-vh;
   min-height: 500px;
   padding-bottom: 65px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-bottom: 70px;
 }
 
@@ -146,21 +168,36 @@ h5 {
 .card {
   border-color: rgba(67, 131, 151, 0.9);
   background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
   height: 100%
 }
 .card-body .card-text {
   font-family: "Open Sans", sans-serif;
 }
 .card-content {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 height: 100%;
 }
 
@@ -175,7 +212,8 @@ border-top: 1px solid #f9c74f;
 margin-bottom: 0px;
 }
 .card blockquote{
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     margin-top: auto;
 }
 /*-------------------------------------------------------------------Form Area*/
@@ -191,9 +229,14 @@ margin-bottom: 0px;
 }
 .form-wrapper {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: stretch;
-  justify-content: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 margin-top: 90px;
   padding-bottom: 50px;
   margin-bottom: 10px;
@@ -263,6 +306,18 @@ textarea .placeholder {
   color: #fafafa;
 }
 /* MODERN BROWSER */
+::-webkit-input-placeholder {
+  color: #fafafa;
+}
+::-moz-placeholder {
+  color: #fafafa;
+}
+:-ms-input-placeholder {
+  color: #fafafa;
+}
+::-ms-input-placeholder {
+  color: #fafafa;
+}
 ::placeholder {
   color: #fafafa;
 }
@@ -292,11 +347,17 @@ textarea .placeholder {
 
 /*-------------------------------------------------------------------Welcome Mat*/
 .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .welcome-mat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
 }
 
@@ -337,9 +398,14 @@ footer {
   font-family: "Open Sans", sans-serif;
 }
 .footer-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 8px;
 }
 .footer-left .copyright{
@@ -350,9 +416,14 @@ footer {
 
 
 .footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-top:0px;
 }
 .footer-right .list-inline{
@@ -364,10 +435,18 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 
 .social-links{
     width: 80%;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .social-links i {
     color: #fafafa;
@@ -446,3 +525,4 @@ font-size: 14px;
 margin-left: 5px;
 }
 }
+
