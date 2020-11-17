@@ -30,7 +30,7 @@
               type="button"
               data-toggle="collapse"
               data-target="#gdn-collapsibleNavbar"
-              aria-controls="#gdn-collapsibleNavbar"
+              aria-controls="gdn-collapsibleNavbar"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -110,9 +110,8 @@
                 <label for="message-text">Message</label><br />
                 <textarea
                   class="message-text"
-                  type="text"
-                  id="message"
-                  name="message"
+                  id="message-text"
+                  name="message-text"
                   maxlength="400"
                   placeholder="Max 400 characters"
                   required
@@ -132,6 +131,8 @@
           <small>Unless otherwise attributed, all content copyright An Gáirdín.</small>
           </div>
           </div>
+
+          <!--Accessibility based on the Resume walkthrough project. Icons are aria-hidden and have associated sr-only text-->
           <div class="col-6 footer-right">
           <ul class="list-inline social-links">
           <li class="list-inline-item"><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
