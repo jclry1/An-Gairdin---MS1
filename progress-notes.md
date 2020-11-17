@@ -70,7 +70,8 @@ Issue resolved using code and info from here: https://medium.com/@samanthaming/s
 
 
 ### Circle with text on index.html (welcome-mat)
-Alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+Circle based on learning in the LoveRunning mini-project
+Alignment using flex + margin/padding: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
 
 ### Change card footers to blockquotes for more semantic mark-up and fix display issues
 https://stackoverflow.com/questions/2205159/correct-use-of-blockquote-q-and-cite#:~:text=Yes.,%2C%20standard%2C%20URL%2C%20etc.&text=The%20blockquote%20element%20(also%20the,where%20the%20quote%20came%20from.
@@ -79,11 +80,15 @@ https://www.w3schools.com/tags/tag_blockquote.asp
 ### Put copyright info into 'small' element for semantic markup
 https://stackoverflow.com/questions/5876021/correct-semantic-tag-for-copyright-info-html5
 
+### Issue with header nav breaking at intermediate screen size
+The issue here was that the header was expanding in vertical height when the menu was expanded at md size (to accommodate the icons and text being split onto separate lines). The effect of this was to disrupt the appearance of the logo on the right.
+Solution has been to delay the menu-expand until the lg screen size.
+
 ## Wishlist
 
 ### Underline active nav 
 
-### Style social media icons to have header color on hover
+### Style social media icons to have header color on hover - done
 
 ### Different widths for contact form based on screen sizes
 90% is good for mobile butseems a bit too wide for desktop

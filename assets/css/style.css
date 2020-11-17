@@ -49,6 +49,13 @@ body {
   align-items: flex-start;
   justify-content: space-around;
 }
+.logo-link{
+    color: #193f34
+}
+.logo-link.active,  .logo-link:focus, .logo-link:hover {
+color: #873408;
+text-decoration: none;
+}
 .navbar-toggler {
   margin-left: 25px;
   margin-top: 5px;
