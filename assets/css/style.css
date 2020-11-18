@@ -68,7 +68,8 @@ body {
       justify-content: space-around;
 }
 .logo-link{
-    color: #193f34
+    color: #193f34;
+    padding-top: 5px;
 }
 .logo-link.active,  .logo-link:focus, .logo-link:hover {
 color: #873408;
@@ -87,7 +88,7 @@ text-decoration: none;
 .nav-item {
   margin-left: 10px;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-weight: 700;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
