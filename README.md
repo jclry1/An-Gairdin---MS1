@@ -183,21 +183,70 @@ Resource: https://web.dev/external-anchors-use-rel-noopener/
 
 
 ### Test on actual devices
-Chrome and Firefox on Linux
-Edge and IE on Windows
-Chrome and Safari on Mac
-Chrome and DuckDuckGo on Android
-Safari on iPad
-Safari on iOS
+Chrome and Firefox on Linux - Done with Dell XPS running Ubuntu 16.04
+Edge and IE on Windows - Done with Dell Latitiude E6440 running Windows 10
+Chrome and Safari on Mac - Done with 2012 MacBook Pro running Mojave
+Chrome and DuckDuckGo on Android - Done with Motorola Moto G7 
+Safari on iPad - To do
+Safari on iOS - To do
 
+## Main Issues Overcome
+There have been lots of msall issues that were reolved quickly by checking the Bootstrap documentation or a quick Google search. More persistent problems which took some time to remedy were:
+#### Bootstrap card footers
+Problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this:
+In the card-body div (Bootstrap) add a new div below the title to contain the paragraph content. Call this .card-content. Set the parent card-body to be:
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+On the new child div, apply: 
+.card-content{
+  align-self: stretch;
+  height: 100%;
+}
+
+It seems to need both the stretch and 100% to work. 
+
+That pushes the footer to the end of th card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. Resolved this with a fixed-height footer to allow space for 3 lines of small text.
+
+Info for this solution derived from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+Note - I changed the use of the default bootstrap card footers to blockquotes and maintained the applicable part so the solution above. For the purposes of an aligned display, it has also been necessary to keep text lengths inthe cards and footers to a similar length.
+
+#### Container-Fluid Margins
+I experienced an issue with container-fluid introducing unwanted margin on right side at small screen sizes. Finally resolved with:
+.container-fluid{
+    overflow-x: hidden;
+}
+Source:
+https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding
+
+#### Vertical Stretch
+I had an issue with getting the main content area to stretch vertically to fill the available space. Fixed with adding vh-100 to all parents:
+https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bottom-of-the-div/30480004#30480004
+
+#### Fixed Header Overlaying Content 
+After researching this issue, it was fixed with this solution (adding padding to the body):
+https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
 
 ## Deployment
-The site is deployed using GitHub Pages. 
+The site is deployed using GitHub Pages. During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod: "python3 m http.server".
+This local hosting served very well for quick checks as to the effect of code hanges. As the site neared completion and was ready for online testing, I deployed to GitHub Pages as follows:
+1. On GitHub, in the project repository, choose *Settings*.
+2. Verify the repo name and go to the *GitHub Pages* section.
+3. Enter the details where required, in this case:
+* Branch is master and the directory is the default top level (root).
+* Theme: None, custom domain: none
+* HTTPS is enforced by default. 
+4. After a couple of minutes the site is available online.
+5. During testing any problems found are fixed in Gitpod. The changes are committed and then pushed to GitHub. After pushing, the live site is automatically updated.
 
-#### Deployment Steps
-1. 
+To run a copy of the site locally, [download a zip file](https://stackoverflow.com/questions/2751227/how-to-download-source-in-zip-format-from-github#:~:text=To%20simply%20download%20a%20repository,file%20of%20the%20whole%20lot.&text=It%20then%20gives%20you%20a%20zip%20file%20to%20download.) of the repository contents or [clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository and run that in your IDE or local machine.
+Full instructions: 
 
-### How to run this project locally
+Once deployed, all testing was done on the live site at: https://workingedge.github.io/An-Gairdin---MS1/
+
 
 ## Credits
 All images and text are copyright An Gairdin.
@@ -208,6 +257,51 @@ All text and image content is courtesy of An Gairdin. Quotes are copyright their
 ### Code
 Code is my own but is based on the course mini-projects and on various online resources, documentation and tutorials, as follows:
 
+##### Navbar
+https://getbootstrap.com/docs/4.0/components/navbar/
+https://medium.com/coder-grrl/the-guide-to-customising-the-bootstrap-4-navbar-i-wish-id-had-6-months-ago-7bc6ce0e3c71
+https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+
+Required jquery, popper etc to enable functinoality ov navbar taken from:
+https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+##### Fixed Bottom:
+https://getbootstrap.com/docs/4.1/utilities/position/
+
+##### Responsive Breakpoints 
+For information used in developing the footer - sizing icons, col-layout:
+https://getbootstrap.com/docs/4.1/layout/overview/
+
+##### Accessibility: When to Add "aria-hidden=true" for Icons
+Resume walkthrough project and https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility
+
+##### Fixed Header Overlaying Content 
+After researching this issue, it was fixed with this solution (adding padding to the body):
+https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
+
+##### Card Decks
+Information and layout practice for using bootstrap card-decks:
+https://getbootstrap.com/docs/4.0/components/card/
+https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
+
+##### Flex
+Information and practice in relation to alignment using flex:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/almanac/properties/a/align-items/
+[Flexbox Zombies](https://mastery.games/flexboxzombies/)
+
+##### Bootstrap Grid
+Bootstrap documentation and https://ajgreaves.github.io/bootstrap-grid-demo/
+
+#### Contact Form 
+The contact form is based on the Love Running mini-project with custom styling and the addition of a textarea.
+Info for textarea styling and setting max-length: https://medium.com/@samanthaming/styling-placeholder-text-with-css-9a2a608b68bc
+
+#### Text Circle Overlay on Home Page
+Based on the Love Running mini-project with alignment (flex) guidance taken from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+#### Styling of Social Links
+Based on the UCD Resume walkthrough project.
 
 ## Acknowledgements
 For initial general guidance on the development of the MS-1 project and the README, the following pages were very helpful:
@@ -216,5 +310,4 @@ For initial general guidance on the development of the MS-1 project and the READ
 [ByIlsa](https://github.com/byIlsa/Aloy-from-outcast-to-heroine)
 
 ## Disclaimer
-
 The content of this website is for educational purposes only.
