@@ -87,7 +87,7 @@ The background image (of an entranceway) also echoes the purpose of the home pag
 
 ### About
 The About page uses a Bootstrap card deck to present the history of the project.
-The text content is broken into three sections to improve the visual appearance and add other points of interest - each text block is enhanced with a top image and a quote that reinforces the purpose and the influences that drive the project. For the purposes of semantic HTML, the quotes are <blockquote> and all inclue a cite attribute. The quotes are set off from the text with a top border echoing the site's header colour. The quotes replace the standard Bootstrap <card-footer> element.
+The text content is broken into three sections to improve the visual appearance and add other points of interest - each text block is enhanced with a top image and a quote that reinforces the purpose and the influences that drive the project. For the purposes of semantic HTML, the quotes are 'blockquote' and all inclue a cite attribute. The quotes are set off from the text with a top border echoing the site's header colour. The quotes replace the standard Bootstrap 'card-footer' element.
 Text and quotes have been allocated to cards to achieve a well-balanced and consistent (aligned) layout. 
 
 ### Garden
