@@ -411,8 +411,6 @@ footer {
     padding-left: 20px;
     text-align: center;
 }
-
-
 .footer-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -467,16 +465,9 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
     padding-right: 10px;
     padding-left: 10px;
     height: 70px;
-    padding-bottom: 10px;
     margin-bottom:0;
   }
-  .footer-left p{
-      padding: 15px 0px 25px;
-  }
-  .footer-right {
-    padding-top: 0;
-    font-size: 1.25em;
-  }
+
   .welcome-mat{
       margin-top:75px;
 }
@@ -504,7 +495,7 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 }
   }
 
-  /* Media query to allow social icons (footer) to display at reduced size on smaller screens:*/
+  /* Media query to allow social icons (footer) to display at reduced size on v.small screens:*/
 @media only screen and (max-width: 320px) {
  .social-links i {
     padding-left: 10px;
