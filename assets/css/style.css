@@ -362,18 +362,14 @@ textarea .placeholder {
 }
 
 .welcome-content {
-  color: #f9c74f;
+  color: #FFe32e;
   height: 200px;
   width: 200px;
   border-radius: 50%;
   text-align: center;
-  /*background-image: url("../images/ladybird-200.jpeg");*/
   border: 2px solid #f9c74f;
   background-color:  rgba(67, 131, 151, 0.9);
-  font-size: 14px;
-  font-family: "Spectral SC", sans-serif;
-  font-weight:700;
-  margin-top:25px;
+  margin-top: 25px;
 }
 .welcome-text {
     margin-top: 40px;
@@ -382,7 +378,9 @@ textarea .placeholder {
 .welcome-content p{
     margin: 0px 0px 0px 0px;
     padding: 0;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 16px;
+  font-family: "Cormorant Garamond", sans-serif;
 }
 
 /*-------------------------------------------------------------------Footer*/
@@ -406,7 +404,7 @@ footer {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    font-size: 8px;
+    font-size: 10px;
 }
 .footer-left .copyright{
     font-family: "Open-Sans", sans-serif;
