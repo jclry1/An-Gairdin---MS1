@@ -5,14 +5,12 @@
 * Browsers: last 4 version
 */
 
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-/*-------------------------------------------------------------------whole page container*/
-
+/*-------------------------------------------------------------------Whole page container*/
 html {
   height: 100vh;
 }
@@ -33,12 +31,12 @@ body {
   min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 /*-------------------------------------------------------------------Header Navigation*/
-.fixed-top{
-    margin-bottom: 10px;
+.fixed-top {
+  margin-bottom: 10px;
 }
 .header-left-nav,
 .header-right-logo {
@@ -59,21 +57,23 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-.logo-link{
-    color: #193f34;
-    padding-top: 5px;
+.logo-link {
+  color: #193f34;
+  padding-top: 5px;
 }
-.logo-link.active,  .logo-link:focus, .logo-link:hover {
-color: #873408;
-text-decoration: none;
+.logo-link.active,
+.logo-link:focus,
+.logo-link:hover {
+  color: #873408;
+  text-decoration: none;
 }
 .navbar-toggler {
   margin-left: 10px;
@@ -84,7 +84,6 @@ text-decoration: none;
   margin: 0px 0px 0px 10px;
   padding: 0px;
 }
-
 .nav-item {
   margin-left: 10px;
   padding-top: 15px;
@@ -95,27 +94,24 @@ text-decoration: none;
 }
 
 /*Styling navbar elements requires high specificity to override default bootstrap: https://stackoverflow.com/questions/43381596/bootstrap-4-navbar-color */
-
 .navbar-light .nav-item .nav-link {
   color: #193f34;
 }
-
 .nav-link i {
   padding-right: 10px;
 }
-
 .navbar-light .nav-item.active .nav-link,
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link {
   color: #873408;
 }
-
 .navbar-light .navbar-toggler {
   margin-top: 15px;
   border-color: #193f34;
 }
 
 /*-------------------------------------------------------------------Main Content Area*/
+/*Home Page*/
 .main-content-area {
   width: 100%;
   height: 100%;
@@ -129,10 +125,11 @@ text-decoration: none;
   padding-bottom: 65px;
   padding-top: 65px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-bottom: 20px;
 }
+/*Content Pages*/
 .main-content-area-garden {
   width: 100%;
   background-color: #fef8e9;
@@ -140,13 +137,12 @@ text-decoration: none;
   min-height: 500px;
   padding-bottom: 65px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-bottom: 70px;
 }
 
-/*Content on about.html and garden.html based on Bootstrap card-deck with additional custom CSS styling - primarily to keep the footers at the bottom of the cards*/
-
+/*Content on about.html and garden.html based on Bootstrap card-deck with additional custom CSS styling*/
 .card-deck {
   margin: 0px 10px 80px 10px;
 }
@@ -179,54 +175,53 @@ h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-item-align: stretch;
-      align-self: stretch;
-  height: 100%
+  align-self: stretch;
+  height: 100%;
 }
 .card-body .card-text {
   font-family: "Open Sans", sans-serif;
 }
 .card-content {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+blockquote {
+  padding: 15px 20px 0px 20px;
+  font-family: "Open-Sans", sans-serif;
+  font-size: small;
+  font-weight: 300;
+  color: #36495a;
+  font-style: italic;
+  border-top: 1px solid #f9c74f;
+  margin-bottom: 0px;
+}
+.card blockquote {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-top: auto;
 }
 
-blockquote{
-padding: 15px 20px 0px 20px;
-font-family: "Open-Sans", sans-serif;
-font-size: small;
-font-weight: 300;
-color: #36495A;
-font-style: italic;
-border-top: 1px solid #f9c74f;
-margin-bottom: 0px;
-}
-.card blockquote{
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-top: auto;
-}
-/*-------------------------------------------------------------------Form Area*/
+/*-------------------------------------------------------------------Contact Page Form Area*/
 /*Contact form based on the Love Running walkthrough project*/
 
-.contact-page-main{
-    width: 100%;
+.contact-page-main {
+  width: 100%;
   background-color: #fef8e9;
   height: 100-vh;
   min-height: 500px;
   margin-bottom: 50px;
-
 }
 .form-wrapper {
   width: 80%;
@@ -234,11 +229,11 @@ margin-bottom: 0px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-margin-top: 65px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 65px;
   padding-bottom: 50px;
   margin-bottom: 20px;
   height: 100%;
@@ -268,7 +263,6 @@ margin-top: 65px;
   border: 1px solid #fafafa;
   border-radius: 2px;
 }
-
 .message-text {
   height: 100px;
   width: 75%;
@@ -283,7 +277,7 @@ textarea {
 textarea .placeholder {
   color: #fafafa;
 }
-/* Placeholder text color in the form */
+/* Placeholder text color in the form. Info on styling from: https://medium.com/@samanthaming/styling-placeholder-text-with-css-9a2a608b68bc */
 /* WebKit, Edge */
 ::-webkit-input-placeholder {
   color: #fafafa;
@@ -323,11 +317,9 @@ textarea .placeholder {
   color: #fafafa;
 }
 /* End placeholder text styling */
-
 .message-text:hover {
   border-color: #f9c74f;
 }
-
 .text-input:hover {
   border-color: #f9c74f;
 }
@@ -346,7 +338,7 @@ textarea .placeholder {
   color: #fafafa;
 }
 
-/*-------------------------------------------------------------------Welcome Mat*/
+/*-------------------------------------------------------------------Welcome Mat (Text circle on home page)*/
 .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,30 +349,28 @@ textarea .placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10px;
 }
-
 .welcome-content {
-  color: #FFe32e;
+  color: #ffe32e;
   height: 200px;
   width: 200px;
   border-radius: 50%;
   text-align: center;
   border: 2px solid #f9c74f;
-  background-color:  rgba(67, 131, 151, 0.9);
+  background-color: rgba(67, 131, 151, 0.9);
   margin-top: 25px;
 }
 .welcome-text {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-
-.welcome-content p{
-    margin: 0px 0px 0px 0px;
-    padding: 0;
-    font-weight: 700;
-    font-size: 16px;
+.welcome-content p {
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
   font-family: "Cormorant Garamond", sans-serif;
 }
 
@@ -398,7 +388,6 @@ textarea .placeholder {
   padding: 0 4px;
   background-color: #fef8e9;
 }
-
 .gallery-column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -417,65 +406,65 @@ footer {
   height: 70px;
   font-family: "Open Sans", sans-serif;
 }
-.footer-left{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    font-size: 10px;
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 10px;
 }
-.footer-left .copyright{
-    font-family: "Open-Sans", sans-serif;
-    padding-left: 20px;
-    text-align: center;
+.footer-left .copyright {
+  font-family: "Open-Sans", sans-serif;
+  padding-left: 20px;
+  text-align: center;
 }
 .footer-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top:0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 0px;
 }
-.footer-right .list-inline{
-    margin-bottom: 0;
+.footer-right .list-inline {
+  margin-bottom: 0;
 }
 
 /*Social links transitions based on Bootstrap 4 'Resume' mini-project
 Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container#Properties_that_control_alignment */
 
-.social-links{
-    width: 80%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.social-links {
+  width: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .social-links i {
-    color: #fafafa;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    font-size: 24px;
+  color: #fafafa;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  font-size: 24px;
 }
-.social-links i:hover{
-    color: #f9c74f;
+.social-links i:hover {
+  color: #f9c74f;
 }
 
 /*-------------------------------------------------------------------Media queries*/
@@ -487,56 +476,52 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
     padding-right: 10px;
     padding-left: 10px;
     height: 70px;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
-  .welcome-mat{
-      margin-top:75px;
-}
-.card-deck{
+  .welcome-mat {
+    margin-top: 75px;
+  }
+  .card-deck {
     margin-bottom: 50px;
-}
+  }
 }
 /* Media query to control behaviour of header/footer at different screen sizes*/
-
 @media only screen and (min-width: 425px) {
- .header-right-logo {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  letter-spacing: 1px;
-  font-family: "Cormorant Garamond", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  min-height: 65px;
-  line-height: 50px;
-}
-.footer-left .copyright{
-    font-size: 12px;
-}
+  .header-right-logo {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    min-height: 65px;
+    line-height: 50px;
   }
+  .footer-left .copyright {
+    font-size: 12px;
+  }
+}
 
-  /* Media query to allow social icons (footer) to display at reduced size on v.small screens:*/
+/* Media query to allow social icons (footer) to display at reduced size on v.small screens:*/
 @media only screen and (max-width: 320px) {
- .social-links i {
+  .social-links i {
     padding-left: 10px;
     font-size: 12px;
+  }
 }
-}
-
 /* Media-query to prevent header being pushed down into content at small screen size (when line breaks between icon and text): */
-
 @media only screen and (max-width: 768px) {
-.nav-link i {
-  padding-right: 5px;
+  .nav-link i {
+    padding-right: 5px;
+  }
+  .nav-item {
+    font-size: 14px;
+    margin-left: 5px;
+  }
 }
-.nav-item {
-font-size: 14px;
-margin-left: 5px;
-}
-}
-
 /*Media queries for gallery display
 Based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 @media screen and (max-width: 800px) {
@@ -545,7 +530,6 @@ Based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
     max-width: 50%;
   }
 }
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .gallery-column {
@@ -554,3 +538,4 @@ Based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
   }
 }
 
+/*CSS Validator Check: Latest check 19/11/20. No error found. */
