@@ -76,12 +76,12 @@ color: #873408;
 text-decoration: none;
 }
 .navbar-toggler {
-  margin-left: 25px;
+  margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .navbar-nav {
-  margin: 0px 0px 0px 25px;
+  margin: 0px 0px 0px 10px;
   padding: 0px;
 }
 
@@ -384,6 +384,27 @@ textarea .placeholder {
   font-family: "Cormorant Garamond", sans-serif;
 }
 
+/*-------------------------------------------------------------------Gallery*/
+/*Code for gallery based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 4px 10px;
+  background-color: #fef8e9;
+}
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  background-color: #fef8e9;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 /*-------------------------------------------------------------------Footer*/
 footer {
   margin-top: 10px;
@@ -514,5 +535,22 @@ Icon alignment using flex: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_
 font-size: 14px;
 margin-left: 5px;
 }
+}
+
+/*Media queries for gallery display
+Based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
