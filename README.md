@@ -94,6 +94,10 @@ Text and quotes have been allocated to cards to achieve a well-balanced and cons
 The Garden page has two sections: Produce and Process
 The layout of each mirrors the layout of the about page and again each text block is enhanced with an appropriate image and blockquote. All images (all pages) have the alt attribute filled.
 
+### Responsive Gallery
+The site contains a gallery page showing additional images form the physical location and adding to the sense of purpose outlined on the about.html and garden.html pages. 
+The gallery layout adjust to the scrren size of the visitor, shifting from one to two to four columns,
+
 ### Contact
 The Contact page features a **contact form**
 The contact form allows for a simple message and the option to subscribe to the project's mailing list. The text area limits input to 400 characters.
@@ -300,6 +304,9 @@ Based on the Love Running mini-project with alignment (flex) guidance taken from
 
 ##### Styling of Social Links
 Based on the UCD Resume walkthrough project.
+
+##### Gallery
+The gallery is based on content on [W3Schools](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp) and has additional styling to maintain the look and feel of this site - padding, background colour.
 
 ## Acknowledgements
 For initial general guidance on the development of the MS-1 project and the README, the following pages were very helpful:
