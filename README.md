@@ -176,7 +176,10 @@ Result: Page is mobile friendly
 
 #### Test contrast
 https://color.a11y.com/
-Initial test show insufficient contrast in text on circle overlay on home page - to be fixed.
+Initial test show insufficient contrast in text on circle overlay on home page - this has been fixed (increased font size and changed colour)
+The test still returns a fail for the copyright info on the footer. I have assessed this visually and in light of the fact that the text is intended to be 'small print' and have decided to keep the footer colour.
+Part-inspired by the information here: https://uxmovement.com/buttons/the-myths-of-color-contrast-accessibility/
+
 
 #### Test performance
 https://www.webpagetest.org/
