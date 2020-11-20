@@ -339,6 +339,7 @@ textarea .placeholder {
 }
 
 /*-------------------------------------------------------------------Welcome Mat (Text circle on home page)*/
+/*Based on the Love Running mini-project */
 .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,13 +365,13 @@ textarea .placeholder {
   margin-top: 25px;
 }
 .welcome-text {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .welcome-content p {
   margin: 0px 0px 0px 0px;
   padding: 0;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Cormorant Garamond", sans-serif;
 }
 
