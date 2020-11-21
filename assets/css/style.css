@@ -80,15 +80,17 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.navbar-collapse{
-    margin-left: 10px;
+.navbar-collapse {
+  margin-left: 10px;
 }
 .navbar-nav {
   margin: 0px 0px 0px 5px;
   padding: 0px;
 }
-.navbar, .navbar-expand-lg, .navbar-light{
-    padding-left: 4px;
+.navbar,
+.navbar-expand-lg,
+.navbar-light {
+  padding-left: 4px;
 }
 .nav-item {
   margin-left: 0px;
@@ -103,8 +105,8 @@ body {
 .navbar-light .nav-item .nav-link {
   color: #193f34;
 }
-.nav-link{
-padding-left: 0px;
+.nav-link {
+  padding-left: 0px;
 }
 .nav-link i {
   padding-right: 4px;
@@ -384,7 +386,6 @@ textarea .placeholder {
   font-family: "Cormorant Garamond", sans-serif;
 }
 
-
 /*-------------------------------------------------------------------Gallery*/
 /*Code for gallery based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .gallery-row {
@@ -547,6 +548,24 @@ Based on: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
     flex: 100%;
     max-width: 100%;
   }
+}
+/*Fix overflowing heading text (h5) in card columns at intermediate screen sizes - see testing.md for more info*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-container h5 {
+    font-family: "Open-Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 8px;
+    color: #215445;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  /*Don't have paragraph text larger than heading*/
+  .card-container p {
+  font-family: "Open-Sans", sans-serif;
+  padding: 0px 20px 0px 8px;
+  font-size: 14px;
+}
 }
 
 /*CSS Validator Check: Latest check 19/11/20. No error found. */
