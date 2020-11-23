@@ -133,13 +133,16 @@ The Gitpod IDE is used for all development.
 The content is stored in GitHub and served on GitHub Pages.
 
 #### Git 
-Version control is achieved using Git.
+Version control is achieved using Git. 
 
 #### Prettier
 Prettier has been used for code formatting.
 
 #### Emmet
 Emmet has been used for quicker coding in Gitpod.
+
+#### Google DevTools
+The DevTools in Google Chrome have been invaluable in isolating layout issues and finding workable solutions quickly.
 
 ## Additional Resources
 #### Tiny JPG
@@ -158,7 +161,7 @@ Emmet has been used for quicker coding in Gitpod.
 See [Testing](testing.md).
 
 ## Deployment
-The site is deployed using GitHub Pages. During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod.
+The site is deployed using [GitHub Pages](https://pages.github.com/). During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod.
 This local hosting served very well for quick checks as to the effect of code hanges. As the site neared completion and was ready for online testing, I deployed to GitHub Pages as follows:
 1. On GitHub, in the project repository, choose *Settings*.
 2. Verify the repo name and go to the *GitHub Pages* section.
