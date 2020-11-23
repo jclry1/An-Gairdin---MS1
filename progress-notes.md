@@ -17,7 +17,7 @@ https://tinyjpg.com/
 Fixed bottom:
 https://getbootstrap.com/docs/4.1/utilities/position/
 
-Really troublesome issue with container-fluid introducing nwanted margin on right side at sm screen sizes. Finally resolved with:
+Really troublesome issue with container-fluid introducing unwanted margin on right side at sm screen sizes. Finally resolved with:
 .container-fluid{
     overflow-x: hidden;
 }
@@ -88,9 +88,42 @@ Solution has been to delay the menu-expand until the lg screen size.
 
 ### Underline active nav 
 
-### Style social media icons to have header color on hover - done
-
 ### Different widths for contact form based on screen sizes
 90% is good for mobile butseems a bit too wide for desktop
 
+## Testing issues - resolutions
+### CSS
+https://jigsaw.w3.org/css-validator/
+
+### HTML
+#### aria-controls
+The W3C HTML checker shows an error that the aria-controls attribute is not pointing to an element in the same document. 
+This is the recommended checker for ARIA: https://w3c.github.io/using-aria/#validation
+Issue was reolved by removing the hash '#' before the ID, in contrast to the data-target attribute.
+
+#### type attribute for <textarea>
+The checker showed an error where I had given included "type=text" for the textarea in the contact form.
+After checking https://www.w3schools.com/tags/tag_textarea.asp and https://www.w3schools.com/tags/att_input_type.asp - I have verified this is an incorrect use of the type attribute and have therefore removed it.
+Tested for any impact on functinoality of the textarea - none.
+
+### Test mobility
+https://search.google.com/test/mobile-friendly
+
+### Test contrast
+https://color.a11y.com/
+
+### Test performance
+https://www.webpagetest.org/
+
+### Test cross-browser
+http://browsershots.org/
+
+### Test on actual devices
+####
+Chrome and Firefox on Linux
+Edge and IE on Windows
+Chrome and Safari on Mac
+Chrome and DuckDuckGo on Android
+Safari on iPad
+Safari on iOS
 
