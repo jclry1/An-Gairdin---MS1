@@ -34,9 +34,8 @@ The primary audience for the website is local to the area (within 100 km) and en
 [Wireframe mockups](assets/docs/wireframe_v1.pdf) were developed before any coding took place and aim to give an outline of the final layout and flow of the site.
 
 The initial version of the wireframe was largely adhered to but there were some changes as the design was built, including:
-* Plan to have an image carousel is pending the delivery of images of sufficient quality
 * Plan to have navigation buttons on the home page was discarded as they looked cluttered and detracted from the look of the page. The hamburger icon is used on smaller screens and the navigation menu opens across the fixed top and larger scren sizes. Instead of navigation buttons, the landing page shows the entrance to the physical space and includes a message clearly identifying the underlying ethos of the organisation.
-* Plan for an image carousel was replaced with the use of Bootstrap card decks with image caps. These provide context to the card text and provide sufficient graphic interest on each of the pages.  
+* Plan for an image carousel was replaced with the use of Bootstrap card decks with image caps. These provide context to the card text and provide sufficient graphic interest on each of the pages.  A repsonsive gallery page is also included, but with any text context provided.
 
 ### Color Palette
 The color palette used in the site aims to mirror the changing colours of the seasons in a garden and to be at the same time warm, vibrant and inviting. Ideas in relation to colour have been gleaned from general reading. 
@@ -63,7 +62,7 @@ Additional colours complementing the above are:
 * #193f34 - text (logo and nav items) in header
 * #873408 - text: hover (logo and nav items) in the header
 
-For information on some color changes due to accessibility testing see testing.
+For information on some color changes due to accessibility testing see [Testing](testing.md).
 
 ## Features
 
@@ -77,7 +76,7 @@ All links in the header are styled consistent with the site color scheme and hav
 The project logo (text) is presented in the header on all pages.
 
 ### Footer 
-Each page has a standard footer with copyright info (left) and social media links (right). In reality, this project has a presence on facebook only. For the purposes of the MS1 project, dummy links to social media sites are (facebook, twitter, vimeo).
+Each page has a standard footer with copyright info (left) and social media links (right). In reality, this project has a presence on facebook only. For the purposes of the MS1 project, dummy links to social media sites are included (facebook, twitter, vimeo).
 Copyright information is consistently displayed in the page footer (left).
 
 Social media links are styled on hover and change color consistently with the site pallette.
@@ -101,19 +100,18 @@ The site contains a gallery page showing additional images form the physical loc
 The gallery layout adjust to the scrren size of the visitor, shifting from one to two to four columns,
 
 ### Contact
-The Contact page features a **contact form**
-The contact form allows for a simple message and the option to subscribe to the project's mailing list. The text area limits input to 400 characters.
+The Contact page features a contact form that allows for a simple message and the option to subscribe to the project's mailing list. The text area limits input to 400 characters.
 (Note: To make the form actually work is outside the scope of this MS1 project).
 Styling of the contact form is consistent with the other pages of the site. For example, the hover color of input area borders align with the site header. The background aligns with the background of the welcome message onthe home page.
 
 The bottom of the form contains a **Send Button**
-The send button text is customised to maintain the welcoming feel of the project and the colour (incl hover) is also customised to align with the overall look and fel of the site. 
+The send button text is customised to maintain the welcoming feel of the project and the colour (incl hover) is also customised to align with the overall look and feel of the site. A tooltip alerts any visitor to the test/educational site that the form does not currently work.
  
 ### Features to Implement in Future
 Based on the exisitng design, here are what I feel are the most warranted additions in the short term:
 * Make the contact form function
-* Add a page with more visual content - photos and video
-* Include a section that updates on a regular basis without input from the site owners - for example a twiiter feed or RSS. This could inlcude content from other sites with a similar purpose, or to provide information on aspects of the site that visitors may be interested in  - for example organic food news, climate change updates etc.
+* Add information using another medium than text and image - ie embedded video.
+* Include a section that updates on a regular basis without input from the site owners - for example a twiiter feed. This could inlcude content from other sites with a similar purpose, or to provide information on aspects of the site that visitors may be interested in  - for example organic food news, climate change updates etc.
 
 ## Technologies Used
 
@@ -124,16 +122,24 @@ The site is built using HTML and uses semantic markup - for example blockquote w
 Styling is achieved using CSS and aims to achieve a consistent look and fel across all pages. Media queries are used to maintain the desired performance at all screen resolutions - for example to shrink social media icons at very small screen sizes.
 
 #### Bootstrap 4
-The Bootsrap 4 framework is used to achieve the layout of content on teh about.html and garden.html pages. Custom CSS is added to achieve correct padding and alignment for text and blockquote elements withn the cards.
+The Bootsrap 4 framework is used to achieve the layout of content on the about.html and garden.html pages. Custom CSS is added to achieve correct padding and alignment for text and blockquote elements within the cards.
+Bootstrap is also used as the basis for the navigation.
+JQuery and Popper are utilised for some aspects of Boostrap functionality - ie collapsing navigation.
 
 #### Gitpod
 The Gitpod IDE is used for all development.
 
 #### GitHub
-GitHub is used to store the site repository.
+The content is stored in GitHub and served on GitHub Pages.
 
 #### Git 
 Version control is achieved using Git.
+
+#### Prettier
+Prettier has been used for code formatting.
+
+#### Emmet
+Emmet has been used for quicker coding in Gitpod.
 
 ## Additional Resources
 #### Tiny JPG
@@ -143,109 +149,16 @@ Version control is achieved using Git.
 [Coolors](https://coolors.co/) is used to generate a consistent and aligned color scheme.
  
 #### Autoprefixer
-[Autoprefixer](https://autoprefixer.github.io/) is used to add vendor prefixes in teh CSS file.
+[Autoprefixer](https://autoprefixer.github.io/) is used to add vendor prefixes in the CSS file.
 
 #### Responsinator
 [Responsinator](https://www.responsinator.com/) is used to check the appearance of the published site on different devices.
 
 ## Testing - Process, Issues, Resolutions
-The site and the source code have both undergone testing. Issues found and the actions taken to resolve the issues are described below.
-
-### CSS
-https://jigsaw.w3.org/css-validator/
-CSS tested at several points during development. Issues such as a ':' in place of a ';' or a missing '}' were found.
-These have been fixed and the CSS run through [auto-prefixer](https://autoprefixer.github.io/) - no issues found.
-As of 18/11/2020 - no CSS errors.
-
-### HTML
-HTML was checked using the [W3C Markup Validation Service](https://validator.w3.org/)
-In initial tests, the following issues were found and resolved:
-
-##### aria-controls
-The W3C HTML checker shows an error that the aria-controls attribute is not pointing to an element in the same document. 
-Verfified that the check I'm using is [appplicable for ARIA - yes](https://w3c.github.io/using-aria/#validation) 
-Issue was reolved by removing the hash '#' before the ID, in contrast to the data-target attribute (which has the # for ID).
-
-##### type attribute for <textarea>
-The checker showed an error where I had included "type=text" for the textarea in the contact form.
-After checking https://www.w3schools.com/tags/tag_textarea.asp and https://www.w3schools.com/tags/att_input_type.asp - I have verified this is an incorrect use of the type attribute and have therefore removed it.
-Tested for any impact on functionality of the textarea - none.
-
-#### Test mobility
-https://search.google.com/test/mobile-friendly
-Tested 17 Novemeber, 2020
-Result: Page is mobile friendly
-
-#### Test contrast
-https://color.a11y.com/
-Initial test show insufficient contrast in text on circle overlay on home page - this has been fixed (increased font size and changed colour)
-The test still returns a fail for the copyright info on the footer. I have assessed this visually and in light of the fact that the text is intended to be 'small print' and have decided to keep the footer colour.
-Part-inspired by the information here: https://uxmovement.com/buttons/the-myths-of-color-contrast-accessibility/
-
-
-#### Test performance
-https://www.webpagetest.org/
-
-#### Test cross-browser
-https://app.crossbrowsertesting.com/public/i04a6e9c0e8a8600/screenshots/z2aa92594c65a69493d6
-
-Action item (done) from this test was to include rel="noopener" or rel="noreferrer" to external links
-Resource: https://web.dev/external-anchors-use-rel-noopener/
-
-#### Test on Actual Devices
-* Chrome and Firefox on Linux - Done with Dell XPS running Ubuntu 16.04, result - ok
-* Edge and IE on Windows - Done with Dell Latitiude E6440 running Windows 10, result - ok
-* Chrome and Safari on Mac - Done with 2012 MacBook Pro running Mojave, result - ok
-* Chrome and DuckDuckGo on Android - Done with Motorola Moto G7, result - ok 
-* Safari on iPad - To do
-* Safari on iOS - To do
-
-## Main Issues Overcome
-There have been lots of msall issues that were reolved quickly by checking the Bootstrap documentation or a quick Google search. More persistent problems which took some time to remedy were:
-#### Bootstrap Card Lengths and Footer Alignment
-I had problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this:
-In the card-body div (Bootstrap) add a new div below the title to contain the paragraph content. Call this .card-content. Set the parent card-body to be:
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-On the new child div, apply: 
-.card-content{
-  align-self: stretch;
-  height: 100%;
-}
-
-It seems to need both the stretch and 100% to work. 
-
-That pushes the footer to the end of the card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. Resolved this with a fixed-height footer to allow space for 3 lines of small text.
-Info for this solution derived from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
-Note - I changed the use of the default bootstrap card footers to blockquotes and maintained the applicable part so the solution above. For the purposes of an aligned display, it has also been necessary to keep text lengths in the cards and footers to a similar length. See next pointing
-
-#### Blockquote Alignmnet
-Despite spending time to align the blockquotes uniformly to the bottom of the Bootstrap cards, an issue appeared with misaligned blockquote heights due to a variation in text length. I resolved this by making sure all the blockquotes in a neighbouring cards was of a very similar length. This works to fix the issue of misalignment except for a small subset of cases where the screen width (around 600px) combined with different word lengths forces line breaks at different points and a slightly different blockquote height. The blockquotes are integral to the design of the cards and to make them shorter would also negate their value to the site. 
-I did test a possible solution by implementing media query (@media (min-width: 576px) and (max-width: 767.98px)) min-height for the blockquotes but this made the display look worse for blockquotes that were shorter (and aligned with each other). 
-In the end, I have decided to live with the slight misalignment at a small subset of screen sizes due to the overall value.
-
-#### Container-Fluid Margins
-I experienced an issue with container-fluid introducing unwanted margin on right side at small screen sizes. Finally resolved with:
-.container-fluid{
-    overflow-x: hidden;
-}
-Source:
-https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding
-
-#### Vertical Stretch
-I had an issue with getting the main content area to stretch vertically to fill the available space. Fixed with adding vh-100 to all parents:
-https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bottom-of-the-div/30480004#30480004
-
-#### Header Overlaying Content 
-After researching this issue, it was fixed with this solution (adding padding to the body):
-https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
-
+See [Testing](testing.md).
 
 ## Deployment
-The site is deployed using GitHub Pages. During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod: "python3 m http.server".
+The site is deployed using GitHub Pages. During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod.
 This local hosting served very well for quick checks as to the effect of code hanges. As the site neared completion and was ready for online testing, I deployed to GitHub Pages as follows:
 1. On GitHub, in the project repository, choose *Settings*.
 2. Verify the repo name and go to the *GitHub Pages* section.
@@ -263,9 +176,9 @@ Once deployed, all testing was done on the live site at: https://workingedge.git
 ## Credits
 
 ### Content
-All text and image content is courtesy of An Gairdin. Quotes are copyright their authors as attributed in the text.
-Icons are from [Font Awesome](https://fontawesome.com/)
-Fonts are from [Google Fonts](https://fonts.google.com/) 
+* All text and image content is courtesy of An Gairdin. Quotes are copyright their authors as attributed in the text.
+* Icons are from [Font Awesome](https://fontawesome.com/)
+* Fonts are from [Google Fonts](https://fonts.google.com/) 
 
 ### Code
 Code is my own but is based on the course mini-projects and on various online resources, documentation and tutorials, as follows:
