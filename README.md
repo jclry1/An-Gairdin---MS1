@@ -1,4 +1,6 @@
 # An Gáirdín
+![Testing An Gairdin](assets/images/readme-images/angairdin-multidevice.png)
+
 An Gáirdín is an ecology and education center located in Portumna, Co Galway, Ireland.
 
 The organisation runs a small organic market garden and orchard and also has a dedicated educational space for running courses and workshops. These range from spirituality to organic gardening to plastic pollution and climate change.
@@ -13,7 +15,7 @@ The site design aims to provide a simple and inviting space, encouraging further
 A brief history of the project should be included as well as information on the main activities.
 A contact option should be available and this should be straighforward and non-intimidating.
 
-## Target audience
+### Target audience
 The primary audience for the website is local to the area (within 100 km) and encompasses regular visitors who may wish to get in contact or see updates, and new visitors who may become supporters. 
 
 ### User Stories
@@ -71,7 +73,7 @@ On small screen sizes the navigation is collapsed and can be expanded by clickin
 The text logo on the right side of the header is also present on all pages and serves as a link back to the home page.
 All links in the header are styled consistent with the site color scheme and have styling on hover.
 
-**logo**
+### Logo
 The project logo (text) is presented in the header on all pages.
 
 ### Footer 
@@ -200,8 +202,8 @@ Resource: https://web.dev/external-anchors-use-rel-noopener/
 
 ## Main Issues Overcome
 There have been lots of msall issues that were reolved quickly by checking the Bootstrap documentation or a quick Google search. More persistent problems which took some time to remedy were:
-#### Bootstrap Card Footers
-Problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this:
+#### Bootstrap Card Lengths and Footer Alignment
+I had problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this:
 In the card-body div (Bootstrap) add a new div below the title to contain the paragraph content. Call this .card-content. Set the parent card-body to be:
 .card-body{
     display: flex;
@@ -216,11 +218,14 @@ On the new child div, apply:
 
 It seems to need both the stretch and 100% to work. 
 
-That pushes the footer to the end of th card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. Resolved this with a fixed-height footer to allow space for 3 lines of small text.
-
+That pushes the footer to the end of the card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. Resolved this with a fixed-height footer to allow space for 3 lines of small text.
 Info for this solution derived from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+Note - I changed the use of the default bootstrap card footers to blockquotes and maintained the applicable part so the solution above. For the purposes of an aligned display, it has also been necessary to keep text lengths in the cards and footers to a similar length. See next pointing
 
-Note - I changed the use of the default bootstrap card footers to blockquotes and maintained the applicable part so the solution above. For the purposes of an aligned display, it has also been necessary to keep text lengths inthe cards and footers to a similar length.
+#### Blockquote Alignmnet
+Despite spending time to align the blockquotes uniformly to the bottom of the Bootstrap cards, an issue appeared with misaligned blockquote heights due to a variation in text length. I resolved this by making sure all the blockquotes in a neighbouring cards was of a very similar length. This works to fix the issue of misalignment except for a small subset of cases where the screen width (around 600px) combined with different word lengths forces line breaks at different points and a slightly different blockquote height. The blockquotes are integral to the design of the cards and to make them shorter would also negate their value to the site. 
+I did test a possible solution by implementing media query (@media (min-width: 576px) and (max-width: 767.98px)) min-height for the blockquotes but this made the display look worse for blockquotes that were shorter (and aligned with each other). 
+In the end, I have decided to live with the slight misalignment at a small subset of screen sizes due to the overall value.
 
 #### Container-Fluid Margins
 I experienced an issue with container-fluid introducing unwanted margin on right side at small screen sizes. Finally resolved with:
@@ -237,6 +242,7 @@ https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bot
 #### Header Overlaying Content 
 After researching this issue, it was fixed with this solution (adding padding to the body):
 https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
+
 
 ## Deployment
 The site is deployed using GitHub Pages. During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod: "python3 m http.server".
@@ -258,6 +264,8 @@ Once deployed, all testing was done on the live site at: https://workingedge.git
 
 ### Content
 All text and image content is courtesy of An Gairdin. Quotes are copyright their authors as attributed in the text.
+Icons are from [Font Awesome](https://fontawesome.com/)
+Fonts are from [Google Fonts](https://fonts.google.com/) 
 
 ### Code
 Code is my own but is based on the course mini-projects and on various online resources, documentation and tutorials, as follows:
@@ -311,11 +319,16 @@ Based on the UCD Resume walkthrough project.
 ##### Gallery
 The gallery is based on content on [W3Schools](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp) and has additional styling to maintain the look and feel of this site - padding, background colour.
 
+#### General
+The Code Institute Slack channels have beena great resource in general, even if not pointed to for a specific problem above.
+
 ## Acknowledgements
 For initial general guidance on the development of the MS-1 project and the README, the following pages were very helpful:
 * [Jim Lynx](https://github.com/JimLynx/CI-MS1-Explore-Ireland)
 * [A Greaves](https://github.com/AJGreaves/portrait-artist)
 * [ByIlsa](https://github.com/byIlsa/Aloy-from-outcast-to-heroine)
+
+My course mentor, Antonio Rodriguez also gave valuable advice in a short time, despite my late introduction.
 
 ## Disclaimer
 The content of this website is for educational purposes only.
