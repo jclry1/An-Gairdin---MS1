@@ -160,6 +160,28 @@ The DevTools in Google Chrome have been invaluable in isolating layout issues an
 ## Testing - Process, Issues, Resolutions
 See [Testing](testing.md).
 
+## Main Issues Overcome
+There have been lots of msall issues that were reolved quickly by checking the Bootstrap documentation or a quick Google search. More persistent problems which took some time to remedy were:
+
+#### Bootstrap Card Footers
+Problems getting the footers in the boostrap cards (card-deck) to align. Tried several options from stackoverflow and elsewhere but none seemed to work. Best solution I've found so far was this: In the card-body div (Bootstrap) add a new div below the title to contain the paragraph content. Call this .card-content. Set the parent card-body to be: .card-body{ display: flex; flex-direction: column; align-items: flex-start; } On the new child div, apply: .card-content{ align-self: stretch; height: 100%; }
+
+It seems to need both the stretch and 100% to work.
+That pushes the footer to the end of th card. However, if the footers have differeing amount of content, they now push up to different heights at the bottom of the card. Resolved this with a fixed-height footer to allow space for 3 lines of small text.
+
+Info for this solution derived from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+Note - I changed the use of the default bootstrap card footers to blockquotes and maintained the applicable part so the solution above. For the purposes of an aligned display, it has also been necessary to keep text lengths inthe cards and footers to a similar length.
+
+#### Container-Fluid Margins
+I experienced an issue with container-fluid introducing unwanted margin on right side at small screen sizes. Finally resolved with: .container-fluid{ overflow-x: hidden; } Source: https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding
+
+#### Vertical Stretch
+I had an issue with getting the main content area to stretch vertically to fill the available space. Fixed with adding vh-100 to all parents: https://stackoverflow.com/questions/30469177/make-bootstrap-column-touch-the-bottom-of-the-div/30480004#30480004
+
+#### Header Overlaying Content
+After researching this issue, it was fixed with this solution (adding padding to the body): https://stackoverflow.com/questions/10336194/top-nav-bar-blocking-top-content-of-the-page
+
 ## Deployment
 The site is deployed using [GitHub Pages](https://pages.github.com/). During development, I viewed and tested the output of the code by running the the site on my local machine through Gitpod.
 This local hosting served very well for quick checks as to the effect of code hanges. As the site neared completion and was ready for online testing, I deployed to GitHub Pages as follows:
