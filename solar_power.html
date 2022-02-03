@@ -16,7 +16,7 @@
         getSolarPower();
 
         async function getSolarPower(){
-            const response = await fetch(gairdin_url);
+            const response = await fetch(gairdin_url, {mode:cors});
             console.log(response);
             document.getElementById("solar_actuals").innerHTML =`
     ${response}
