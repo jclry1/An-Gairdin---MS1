@@ -16,7 +16,7 @@
         getSolarPower();
 
         async function getSolarPower(){
-            const response = await fetch(gairdin_url, {mode:'cors', referrer='https://workingedge.github.io/'});
+            const response = await fetch(gairdin_url, {method: 'GET', mode:'cors'});
             console.log(response);
             document.getElementById("solar_actuals").innerHTML =`
     ${response}
