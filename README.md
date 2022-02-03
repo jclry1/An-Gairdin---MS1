@@ -1,7 +1,7 @@
 # An Gáirdín
 ![Testing An Gairdin](assets/images/readme-images/angairdin-multidevice.png)
 
-An Gáirdín is an ecology and education center located in Portumna, Co Galway, Ireland.
+OK. An Gáirdín is an ecology and education center located in Portumna, Co Galway, Ireland.
 
 The organisation runs a small organic market garden and orchard and also has a dedicated educational space for running courses and workshops. These range from spirituality to organic gardening to plastic pollution and climate change.
 
